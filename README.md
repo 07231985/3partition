@@ -5,6 +5,6 @@
 ```
     1. Proving P = NP through the 3-Partition Problem
             
-            pending upload
+            3partition.py
             
 ```
