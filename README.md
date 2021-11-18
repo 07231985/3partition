@@ -4,7 +4,8 @@
 
 ```
     1. Proving P = NP through the 3-Partition Problem
-            
+       https://zenodo.org/record/5710488
+       
             3partition.py
             
 ```
