@@ -40,13 +40,19 @@
         if index_smallest_num >= 1:
             previous_num = new_set_numbers[index_smallest_num - 1]
             skipped_nums = 0
-            while new_set_numbers[index_smallest_num] == previous_num:
-                skipped_nums += 1
-                index_smallest_num += 1
 
-            print(f"Skipped the number: {previous_num} >>> {skipped_nums} time(s)")
-            print("because it's the same small number")
-            print("=====================")
+            if new_set_numbers[index_smallest_num] == previous_num:
+
+                while new_set_numbers[index_smallest_num] == previous_num:
+                    skipped_nums += 1
+                    if index_smallest_num < len(new_set_numbers) - 1:
+                        index_smallest_num += 1
+                    else:
+                        break
+
+                print(f"Skipped the number: {previous_num} >>> {skipped_nums} time(s)")
+                print("because it's the same small number")
+                print("=====================")
 
 ### Example
 
