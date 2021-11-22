@@ -35,7 +35,7 @@
 ## B. increase efficiency
 
 ### detect if the value of the previous small number is the same as the value of the current small number
-### inserted at line 164 to 174:
+### inserted at line 164 to 179:
 
         if index_smallest_num >= 1:
             previous_num = new_set_numbers[index_smallest_num - 1]
