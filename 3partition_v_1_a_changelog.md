@@ -7,7 +7,7 @@
 
 ### changed this lines of code starting at line 172 to 190:
 
-	smallest_number = new_set_numbers[index_smallest_num]
+	    smallest_number = new_set_numbers[index_smallest_num]
         new_set_numbers[index_smallest_num] = -1000000
 
         if difference_nums in new_set_numbers:
@@ -18,7 +18,7 @@
 
 ### to this line of code starting at 184 to 203:
 
-	smallest_number = new_set_numbers[index_smallest_num]
+	    smallest_number = new_set_numbers[index_smallest_num]
         new_set_numbers.remove(smallest_number)
 
         if difference_nums in new_set_numbers:
