@@ -15,17 +15,18 @@
 set_of_numbers = [20, 23, 25, 30, 49, 45, 27, 30, 30, 40, 23, 18, 55,
                   35, 0, 89, 1, 0, 45, 40, 5, 0, -1, 91, -89, 179, 0, ]
 
-set_of_numbers = [20, 23, 25, 30, 49, 45, 27, 30, 30, 40, 23, 18, 55,
-                  35, 0, 89, 1, 0, 45, 40, 5, 0, -1, 91, -89, 179, 0,
-                  20, 23, 25, 30, 49, 45, 27, 30, 30, 40, 23, 18, 55,
-                  35, 0, 89, 1, 0, 45, 40, 5, 0, -1, 91, -89, 179, 0,
-                  20, 23, 25, 30, 49, 45, 27, 30, 30, 40, 23, 18, 55,
-                  35, 0, 89, 1, 0, 45, 40, 5, 0, -1, 91, -89, 179, 0, ]
+# set_of_numbers = [20, 23, 25, 30, 49, 45, 27, 30, 30, 40, 23, 18, 55,
+#                   35, 0, 89, 1, 0, 45, 40, 5, 0, -1, 91, -89, 179, 0,
+#                   20, 23, 25, 30, 49, 45, 27, 30, 30, 40, 23, 18, 55,
+#                   35, 0, 89, 1, 0, 45, 40, 5, 0, -1, 91, -89, 179, 0,
+#                   20, 23, 25, 30, 49, 45, 27, 30, 30, 40, 23, 18, 55,
+#                   35, 0, 89, 1, 0, 45, 40, 5, 0, -1, 91, -89, 179, 0, ]
 
 # set_of_numbers = [3, 1, 1, 3, 1, 1]
 # set_of_numbers = [7, 2, 5, 1, 7, 8]
 # set_of_numbers = [1, 1, 1]
 # set_of_numbers = [0, 0, 0, 0, 0, 0, 2, 2, 2]
+# set_of_numbers = [1, 5, 0, 0, 3, 5, ]
 
 # a. special case: 2 combinations exists, but only 1 combination is correct
 # set_of_numbers = [0, 7, 2, 3, 1, 9, 8, 5, 1]
@@ -48,7 +49,6 @@ set_of_numbers = [20, 23, 25, 30, 49, 45, 27, 30, 30, 40, 23, 18, 55,
 # set_of_numbers = [0, 0, 0, 0, 0, 90] # error
 # set_of_numbers = [0, 0, 0, 0, 0, 0, 0, 0, 1]
 # set_of_numbers = [0, 7, 2, 3, 8, 5]
-# set_of_numbers = [1, 5, 0, 0, 3, 5, ]
 
 complete_list = []
 number_of_subsets = 0
@@ -164,13 +164,19 @@ def find_match(start_with_this_num=-1):
         if index_smallest_num >= 1:
             previous_num = new_set_numbers[index_smallest_num - 1]
             skipped_nums = 0
-            while new_set_numbers[index_smallest_num] == previous_num:
-                skipped_nums += 1
-                index_smallest_num += 1
 
-            print(f"Skipped the number: {previous_num} >>> {skipped_nums} time(s)")
-            print("because it's the same small number")
-            print("=====================")
+            if new_set_numbers[index_smallest_num] == previous_num:
+
+                while new_set_numbers[index_smallest_num] == previous_num:
+                    skipped_nums += 1
+                    if index_smallest_num < len(new_set_numbers) - 1:
+                        index_smallest_num += 1
+                    else:
+                        break
+
+                print(f"Skipped the number: {previous_num} >>> {skipped_nums} time(s)")
+                print("because it's the same small number")
+                print("=====================")
 
         # ========= count total steps for each function and loop
         count_total_steps()
