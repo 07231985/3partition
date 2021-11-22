@@ -76,8 +76,8 @@ New version: 3partition_v_1_a.py
 
 	Total steps for all the functions to complete: 58
 	Total steps for finding a match for all the subsets using the equation: 30
-```
 Result: 
+```
 =====================
 the difference: 36 = 90 - (49 + 5)
 =====================
