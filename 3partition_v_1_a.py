@@ -26,7 +26,6 @@ set_of_numbers = [20, 23, 25, 30, 49, 45, 27, 30, 30, 40, 23, 18, 55,
 # set_of_numbers = [7, 2, 5, 1, 7, 8]
 # set_of_numbers = [1, 1, 1]
 # set_of_numbers = [0, 0, 0, 0, 0, 0, 2, 2, 2]
-# set_of_numbers = [1, 5, 0, 0, 3, 5, ]
 
 # a. special case: 2 combinations exists, but only 1 combination is correct
 # set_of_numbers = [0, 7, 2, 3, 1, 9, 8, 5, 1]
@@ -49,6 +48,7 @@ set_of_numbers = [20, 23, 25, 30, 49, 45, 27, 30, 30, 40, 23, 18, 55,
 # set_of_numbers = [0, 0, 0, 0, 0, 90] # error
 # set_of_numbers = [0, 0, 0, 0, 0, 0, 0, 0, 1]
 # set_of_numbers = [0, 7, 2, 3, 8, 5]
+# set_of_numbers = [1, 5, 0, 0, 3, 5, ]
 
 complete_list = []
 number_of_subsets = 0
