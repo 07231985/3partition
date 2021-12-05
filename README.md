@@ -8,7 +8,12 @@
        
             3partition.py
             
-            updated:
-            3partition_v_1_a.py (bugs and increase efficiency)
+                updated:
+                    3partition_v_1_a.py (bugs and increase efficiency)
             
+            3partition_v_2.py
+                includes updates and its own sorting algorithm
+            
+            3partition_complete_greedy_algorithm.py
+                complete greedy algorithm for 3 partition problems
 ```
